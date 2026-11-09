@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "stack-expressjs-rest-api": {
+      "source": "stack-shifter/skills",
+      "sourceType": "github",
+      "skillPath": "skills/stack-expressjs-rest-api/SKILL.md",
+      "computedHash": "0b1e490e5b57852974d5f85c93ae6e44e80dde84257da5b1f8f08fb08e98d3f1"
+    },
+    "stack-spec-workflow": {
+      "source": "stack-shifter/skills",
+      "sourceType": "github",
+      "skillPath": "skills/stack-spec-workflow/SKILL.md",
+      "computedHash": "58f8d9e6d7149a6e1459afff3ce8cf648b6c556b42562891f923ea184c359a9d"
+    }
+  }
+}

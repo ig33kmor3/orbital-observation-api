@@ -1,0 +1,5 @@
+.agents/
+AGENTS.md
+skills-lock.json
+dist/
+package-lock.json

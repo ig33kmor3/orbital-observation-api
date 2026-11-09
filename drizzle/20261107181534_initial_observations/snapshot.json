@@ -1,0 +1,139 @@
+{
+  "version": "8",
+  "dialect": "postgres",
+  "id": "93341a21-2c93-484b-9849-f7a3525e9e41",
+  "prevIds": [
+    "00000000-0000-0000-0000-000000000000"
+  ],
+  "ddl": [
+    {
+      "isRlsEnabled": false,
+      "name": "latest_observations",
+      "entityType": "tables",
+      "schema": "public"
+    },
+    {
+      "isRlsEnabled": false,
+      "name": "observations",
+      "entityType": "tables",
+      "schema": "public"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "object_id",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "latest_observations"
+    },
+    {
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "observation_id",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "latest_observations"
+    },
+    {
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "observation_id",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "observations"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "object_id",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "observations"
+    },
+    {
+      "type": "timestamp(3) with time zone",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "observed_at",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "observations"
+    },
+    {
+      "nameExplicit": true,
+      "columns": [
+        "object_id",
+        "observation_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "observations",
+      "columnsTo": [
+        "object_id",
+        "observation_id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "name": "latest_observations_observation_fk",
+      "entityType": "fks",
+      "schema": "public",
+      "table": "latest_observations"
+    },
+    {
+      "columns": [
+        "object_id"
+      ],
+      "nameExplicit": false,
+      "name": "latest_observations_pkey",
+      "schema": "public",
+      "table": "latest_observations",
+      "entityType": "pks"
+    },
+    {
+      "columns": [
+        "observation_id"
+      ],
+      "nameExplicit": false,
+      "name": "observations_pkey",
+      "schema": "public",
+      "table": "observations",
+      "entityType": "pks"
+    },
+    {
+      "nameExplicit": true,
+      "columns": [
+        "object_id",
+        "observation_id"
+      ],
+      "nullsNotDistinct": false,
+      "name": "observations_object_observation_key",
+      "entityType": "uniques",
+      "schema": "public",
+      "table": "observations"
+    }
+  ],
+  "renames": []
+}
